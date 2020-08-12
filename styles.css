@@ -1,0 +1,131 @@
+body {
+  margin-top: 4em;
+  font-family: "Roboto", sans-serif;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+
+  background: #ffdcf7;
+}
+#profile {
+  border-radius: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  width: 10em;
+  margin: 0 auto 2em;
+  display: inline;
+}
+* {
+  text-align: center;
+}
+p {
+  text-align: center;
+  line-height: 0.6em;
+}
+a {
+  text-decoration: none;
+  color: #79696c;
+}
+
+ul {
+  display: inline;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  align-items: center;
+  display: inline-block;
+  padding-right: 2em;
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px;
+  height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: inline-block;
+}
+
+p {
+  font-size: 20px;
+}
+
+#about {
+  padding-bottom: 50px;
+}
+
+#love {
+  animation-name: color-change, breathing;
+  animation-duration: 2s, 3s;
+  animation-iteration-count: infinite;
+}
+footer {
+  display: block;
+  height: 1em;
+  padding-bottom: 1em;
+  position: absolute;
+  bottom: 0;
+  margin-right: 0;
+}
+#peeker {
+  position: relative;
+  text-align: right;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  height: 10%;
+  width: 10%;
+  right: -10px;
+  bottom: 100px;
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  75% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes color-change {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #005c00;
+  }
+  75% {
+    color: #ff0080;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
