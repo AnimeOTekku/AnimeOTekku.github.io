@@ -94,7 +94,7 @@ footer {
   height: 10%;
   width: 10%;
   right: -10px;
-  bottom: 100px;
+  bottom: 70px;
 }
 
 .row {
@@ -106,7 +106,6 @@ footer {
 
 .column {
   flex-basis: 20%;
-
 }
 @keyframes breathing {
   0% {
