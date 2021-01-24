@@ -1,10 +1,16 @@
+/*
+* this CSS is a mess lmao
+* vw and vh calculator https://khaledkzy.github.io/pixel-vh-vw-converter/
+*/
 body {
   margin-top: 2em;
   font-family: "Roboto", sans-serif;
+  font-size: 1.111vw;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
-  height: 100%;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   color: white;
 
@@ -12,9 +18,8 @@ body {
 }
 #profile {
   border-radius: 50%;
-  max-height: 100%;
-  max-width: 100%;
-  width: 10em;
+  height: 11.668611435239207vh;
+  width: 5.9523809523809526vw;
   margin: 0 auto 2em;
   display: inline;
 }
@@ -24,11 +29,12 @@ body {
 }
 h4 {
   color: red;
-  font-size: 20px;
+  font-size: 1.111vw;
 }
 p {
   text-align: center;
   line-height: 0.6em;
+  font-size: 1.111vw;
 }
 #history {
   display: block;
@@ -52,24 +58,20 @@ li {
   align-items: center;
   display: inline-block;
   padding-right: 2em;
-  font-size: 20px;
+  font-size: 1.111vw;
   font-weight: 1000;
 }
 h1 {
-  font-size: 40px;
-  height: 50px;
+  font-size: 1.111vw;
+  height: 1.111vw;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
   display: inline-block;
 }
 
-p {
-  font-size: 20px;
-}
-
 #about {
-  padding-bottom: 50px;
+  padding-bottom: 1.111vw;
 }
 
 #love {
@@ -85,17 +87,6 @@ footer {
   bottom: 0;
   margin-right: 0;
 }
-#peeker {
-  position: relative;
-  text-align: right;
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  height: 10%;
-  width: 10%;
-  right: -10px;
-  bottom: 70px;
-}
 
 .row {
   font-size: 0;
@@ -107,6 +98,7 @@ footer {
 .column {
   flex-basis: 20%;
 }
+
 @keyframes breathing {
   0% {
     -webkit-transform: scale(0.9);
